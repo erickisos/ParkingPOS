@@ -73,4 +73,7 @@
     <Compile Include="gtk-gui\ParkingPOS.AcercaDeDialog.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="img\icon.png" />
+  </ItemGroup>
 </Project>

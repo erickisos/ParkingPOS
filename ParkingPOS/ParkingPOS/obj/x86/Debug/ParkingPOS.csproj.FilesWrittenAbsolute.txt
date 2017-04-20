@@ -1,0 +1,6 @@
+/home/erick/Documentos/MonoDevelop_WS/ParkingPOS/ParkingPOS/ParkingPOS/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/erick/Documentos/MonoDevelop_WS/ParkingPOS/ParkingPOS/ParkingPOS/obj/x86/Debug/ParkingPOS.gtk-gui.gui.stetic
+/home/erick/Documentos/MonoDevelop_WS/ParkingPOS/ParkingPOS/ParkingPOS/bin/Debug/ParkingPOS.exe.mdb
+/home/erick/Documentos/MonoDevelop_WS/ParkingPOS/ParkingPOS/ParkingPOS/bin/Debug/ParkingPOS.exe
+/home/erick/Documentos/MonoDevelop_WS/ParkingPOS/ParkingPOS/ParkingPOS/obj/x86/Debug/ParkingPOS.exe
+/home/erick/Documentos/MonoDevelop_WS/ParkingPOS/ParkingPOS/ParkingPOS/obj/x86/Debug/ParkingPOS.exe.mdb
