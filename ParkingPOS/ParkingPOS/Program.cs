@@ -1,5 +1,6 @@
 ﻿using System;
 using Gtk;
+using Mono.Data.Sqlite;
 
 namespace ParkingPOS
 {

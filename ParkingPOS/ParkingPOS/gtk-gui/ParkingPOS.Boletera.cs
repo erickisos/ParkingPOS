@@ -4,6 +4,16 @@ namespace ParkingPOS
 {
 	public partial class Boletera
 	{
+		private global::Gtk.VBox vbox2;
+		
+		private global::Gtk.ScrolledWindow GtkScrolledWindow;
+		
+		private global::Gtk.TextView textview1;
+		
+		private global::Gtk.HBox hbox1;
+		
+		private global::Gtk.Entry entry1;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -11,11 +21,48 @@ namespace ParkingPOS
 			this.Name = "ParkingPOS.Boletera";
 			this.Title = global::Mono.Unix.Catalog.GetString ("ParkingPOS - Boletera");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+			// Container child ParkingPOS.Boletera.Gtk.Container+ContainerChild
+			this.vbox2 = new global::Gtk.VBox ();
+			this.vbox2.Name = "vbox2";
+			this.vbox2.Spacing = 6;
+			// Container child vbox2.Gtk.Box+BoxChild
+			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
+			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
+			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
+			this.textview1 = new global::Gtk.TextView ();
+			this.textview1.CanFocus = true;
+			this.textview1.Name = "textview1";
+			this.GtkScrolledWindow.Add (this.textview1);
+			this.vbox2.Add (this.GtkScrolledWindow);
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.GtkScrolledWindow]));
+			w2.Position = 0;
+			// Container child vbox2.Gtk.Box+BoxChild
+			this.hbox1 = new global::Gtk.HBox ();
+			this.hbox1.Name = "hbox1";
+			this.hbox1.Spacing = 6;
+			// Container child hbox1.Gtk.Box+BoxChild
+			this.entry1 = new global::Gtk.Entry ();
+			this.entry1.CanFocus = true;
+			this.entry1.Name = "entry1";
+			this.entry1.IsEditable = true;
+			this.entry1.InvisibleChar = '•';
+			this.hbox1.Add (this.entry1);
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.entry1]));
+			w3.Position = 0;
+			w3.Expand = false;
+			w3.Fill = false;
+			this.vbox2.Add (this.hbox1);
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox1]));
+			w4.Position = 1;
+			w4.Expand = false;
+			w4.Fill = false;
+			this.Add (this.vbox2);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 958;
-			this.DefaultHeight = 452;
+			this.DefaultWidth = 855;
+			this.DefaultHeight = 495;
 			this.Show ();
 		}
 	}

@@ -57,6 +57,7 @@
     </Reference>
     <Reference Include="Mono.Posix" />
     <Reference Include="System.Data" />
+    <Reference Include="Mono.Data.Sqlite" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">

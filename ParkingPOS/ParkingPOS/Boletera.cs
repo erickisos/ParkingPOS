@@ -9,6 +9,13 @@ namespace ParkingPOS
 		{
 			this.Build ();
 		}
+
+		protected void OnKeyReleased (object o, Gtk.KeyReleaseEventArgs args)
+		{
+			if (args.Event.Key == Gdk.Key.F3) {
+				
+			}
+		}
 	}
 }
 

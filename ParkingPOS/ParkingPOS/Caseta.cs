@@ -4,8 +4,7 @@ namespace ParkingPOS
 {
 	public partial class Caseta : Gtk.Window
 	{
-		public Caseta () :
-			base (Gtk.WindowType.Toplevel)
+		public Caseta () : base (Gtk.WindowType.Toplevel)
 		{
 			this.Build ();
 		}
