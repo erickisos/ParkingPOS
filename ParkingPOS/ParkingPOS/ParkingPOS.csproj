@@ -71,6 +71,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AcercaDeDialog.cs" />
     <Compile Include="gtk-gui\ParkingPOS.AcercaDeDialog.cs" />
+    <Compile Include="Boletera.cs" />
+    <Compile Include="gtk-gui\ParkingPOS.Boletera.cs" />
+    <Compile Include="Caseta.cs" />
+    <Compile Include="gtk-gui\ParkingPOS.Caseta.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
