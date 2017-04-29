@@ -1,12 +1,12 @@
 ﻿using System;
+using System.Drawing.Printing;
 using Gtk;
 using Mono.Data.Sqlite;
 
 namespace ParkingPOS
 {
 	class MainClass
-	{
-		public SQLConnection conn = null;
+	{		
 		const string creatorStringSql = "CREATE TABLE IF NOT EXISTS VENTAS(" +
 			"FOLIO VARCHAR(8) PRIMARY KEY NOT NULL," +
 			"HORA VARCHAR(4) NOT NULL," +
@@ -33,9 +33,10 @@ namespace ParkingPOS
 		public static void Main (string[] args)
 		{
 			SQLConnection conn = new SQLConnection ("URI=file:POS.db");
-			conn.executeQuery (creatorStringSql);
+			PrintDocument printer = new PrintDocument ();
+			// conn.executeQuery (creatorStringSql);
 			Application.Init ();
-			MainWindow win = new MainWindow ();
+			MainWindow win = new MainWindow (ref conn, ref printer);
 			win.Show ();
 			Application.Run ();
 		}

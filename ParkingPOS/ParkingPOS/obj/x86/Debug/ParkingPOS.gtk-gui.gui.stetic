@@ -183,7 +183,6 @@ Boletera</property>
   </widget>
   <widget class="Gtk.Dialog" id="ParkingPOS.AcercaDeDialog" design-size="400 300">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">window1</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Buttons">1</property>
     <property name="HelpButton">False</property>
@@ -280,7 +279,7 @@ Boletera</property>
     <action-group name="Default">
       <action id="AyudaAction">
         <property name="Type">Action</property>
-        <property name="Label" translatable="yes">Ayuda</property>
+        <property name="Label" translatable="yes">A_yuda</property>
         <property name="ShortLabel" translatable="yes">Ayuda</property>
       </action>
       <action id="AcercaDeAction">
@@ -295,7 +294,7 @@ Boletera</property>
       </action>
       <action id="BaseDeDatosAction">
         <property name="Type">Action</property>
-        <property name="Label" translatable="yes">Base de Datos</property>
+        <property name="Label" translatable="yes">_Base de Datos</property>
         <property name="ShortLabel" translatable="yes">Base de Datos</property>
       </action>
       <action id="DepurarAction">
@@ -310,11 +309,12 @@ Boletera</property>
       </action>
       <action id="EditarAction">
         <property name="Type">Action</property>
-        <property name="Label" translatable="yes">Editar</property>
+        <property name="Label" translatable="yes">_Editar</property>
         <property name="ShortLabel" translatable="yes">Editar</property>
       </action>
       <action id="PreferenciasAction">
         <property name="Type">Action</property>
+        <property name="Accelerator">&lt;Alt&gt;&lt;Mod2&gt;p</property>
         <property name="Label" translatable="yes">Preferencias</property>
         <property name="ShortLabel" translatable="yes">Preferencias</property>
       </action>
@@ -355,15 +355,7 @@ Boletera</property>
             <property name="MemberName" />
             <property name="Spacing">6</property>
             <child>
-              <widget class="Gtk.Image" id="image2">
-                <property name="MemberName" />
-              </widget>
-              <packing>
-                <property name="Position">0</property>
-                <property name="AutoSize">True</property>
-                <property name="Expand">False</property>
-                <property name="Fill">False</property>
-              </packing>
+              <placeholder />
             </child>
             <child>
               <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
@@ -386,8 +378,6 @@ Boletera</property>
           <packing>
             <property name="Position">1</property>
             <property name="AutoSize">True</property>
-            <property name="Expand">False</property>
-            <property name="Fill">False</property>
           </packing>
         </child>
         <child>
@@ -404,14 +394,10 @@ Boletera</property>
               </widget>
               <packing>
                 <property name="Position">0</property>
-                <property name="AutoSize">True</property>
+                <property name="AutoSize">False</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
               </packing>
-            </child>
-            <child>
-              <placeholder />
-            </child>
-            <child>
-              <placeholder />
             </child>
           </widget>
           <packing>

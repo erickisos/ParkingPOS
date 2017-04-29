@@ -7,10 +7,11 @@ namespace ParkingPOS
 		public AcercaDeDialog ()
 		{
 			this.ProgramName = "Parking POS";
-			this.Version = "0.1_alpha1";
-			this.Logo = new Gdk.Pixbuf("/home/erick/Documentos/MonoDevelop_WS/ParkingPOS/ParkingPOS/ParkingPOS/img/icon_128.png");
+			this.Version = "0.1";
+			this.License = "Released under the GNU General Public License v3";
+			this.Logo = new Gdk.Pixbuf("../../icon_128.png");
 			this.Authors = new string[] {"Erick G. Islas-Osuna"};
-			this.Comments = @"Prueba de Conexion entre ventanas";
+			this.Comments = @"Punto de Venta para estacionamiento.";
 			this.Website = "https://github.com/erickisos/ParkingPOS";
 			// this.Build ();
 		}

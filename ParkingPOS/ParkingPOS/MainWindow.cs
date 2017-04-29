@@ -1,25 +1,32 @@
 ﻿using System;
+using System.Drawing.Printing;
 using Gtk;
+using ParkingPOS;
 
 public partial class MainWindow: Gtk.Window
 {
-	public static ParkingPOS.AcercaDeDialog about;
-	public static ParkingPOS.Caseta caseta;
-	public static ParkingPOS.Boletera boletera;
+	public static AcercaDeDialog about;
+	public static Caseta caseta;
+	public static Boletera boletera;
+	private static SQLConnection conn;
+	private static PrintDocument printer;
 
-	public MainWindow () : base (Gtk.WindowType.Toplevel)
+	public MainWindow (ref SQLConnection sqlConnector, ref PrintDocument mainPrinter) : base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
-		//about = new ParkingPOS.AcercaDeDialog ();
-		//caseta = new ParkingPOS.Caseta ();
+		conn = sqlConnector;
+		printer = mainPrinter;
+		about = new ParkingPOS.AcercaDeDialog ();
+		//caseta = new ParkingPOS.Caseta (ref conn);
+
 		//boletera = new ParkingPOS.Boletera ();
-		//about.Run ();
-		//about.Destroy ();
+		about.Run ();
+		about.Destroy ();
 	}
 
 	void OnClicksito (object sender, EventArgs a)
 	{
-		about = new ParkingPOS.AcercaDeDialog ();
+		about = new AcercaDeDialog ();
 		about.Run ();
 		about.Destroy ();
 	}

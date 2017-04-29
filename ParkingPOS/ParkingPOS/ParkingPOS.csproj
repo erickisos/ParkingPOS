@@ -58,6 +58,7 @@
     <Reference Include="Mono.Posix" />
     <Reference Include="System.Data" />
     <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -81,5 +82,8 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="img\icon.png" />
+    <None Include="icon_192.png" />
+    <None Include="icon_128.png" />
+    <None Include="icon.png" />
   </ItemGroup>
 </Project>

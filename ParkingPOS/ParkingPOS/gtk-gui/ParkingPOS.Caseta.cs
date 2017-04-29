@@ -28,8 +28,6 @@ namespace ParkingPOS
 		
 		private global::Gtk.HBox hbox8;
 		
-		private global::Gtk.Image image2;
-		
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
 		
 		private global::Gtk.TreeView treeview1;
@@ -44,7 +42,7 @@ namespace ParkingPOS
 			// Widget ParkingPOS.Caseta
 			this.UIManager = new global::Gtk.UIManager ();
 			global::Gtk.ActionGroup w1 = new global::Gtk.ActionGroup ("Default");
-			this.AyudaAction = new global::Gtk.Action ("AyudaAction", global::Mono.Unix.Catalog.GetString ("Ayuda"), null, null);
+			this.AyudaAction = new global::Gtk.Action ("AyudaAction", global::Mono.Unix.Catalog.GetString ("A_yuda"), null, null);
 			this.AyudaAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Ayuda");
 			w1.Add (this.AyudaAction, null);
 			this.AcercaDeAction = new global::Gtk.Action ("AcercaDeAction", global::Mono.Unix.Catalog.GetString ("Acerca De"), null, null);
@@ -53,7 +51,7 @@ namespace ParkingPOS
 			this.ManualDeUsuarioAction = new global::Gtk.Action ("ManualDeUsuarioAction", global::Mono.Unix.Catalog.GetString ("Manual de Usuario"), null, null);
 			this.ManualDeUsuarioAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Manual de Usuario");
 			w1.Add (this.ManualDeUsuarioAction, null);
-			this.BaseDeDatosAction = new global::Gtk.Action ("BaseDeDatosAction", global::Mono.Unix.Catalog.GetString ("Base de Datos"), null, null);
+			this.BaseDeDatosAction = new global::Gtk.Action ("BaseDeDatosAction", global::Mono.Unix.Catalog.GetString ("_Base de Datos"), null, null);
 			this.BaseDeDatosAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Base de Datos");
 			w1.Add (this.BaseDeDatosAction, null);
 			this.DepurarAction = new global::Gtk.Action ("DepurarAction", global::Mono.Unix.Catalog.GetString ("Depurar"), null, null);
@@ -62,12 +60,12 @@ namespace ParkingPOS
 			this.RepararAction = new global::Gtk.Action ("RepararAction", global::Mono.Unix.Catalog.GetString ("Reparar"), null, null);
 			this.RepararAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Reparar");
 			w1.Add (this.RepararAction, null);
-			this.EditarAction = new global::Gtk.Action ("EditarAction", global::Mono.Unix.Catalog.GetString ("Editar"), null, null);
+			this.EditarAction = new global::Gtk.Action ("EditarAction", global::Mono.Unix.Catalog.GetString ("_Editar"), null, null);
 			this.EditarAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Editar");
 			w1.Add (this.EditarAction, null);
 			this.PreferenciasAction = new global::Gtk.Action ("PreferenciasAction", global::Mono.Unix.Catalog.GetString ("Preferencias"), null, null);
 			this.PreferenciasAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Preferencias");
-			w1.Add (this.PreferenciasAction, null);
+			w1.Add (this.PreferenciasAction, "<Alt><Mod2>p");
 			this.UIManager.InsertActionGroup (w1, 0);
 			this.AddAccelGroup (this.UIManager.AccelGroup);
 			this.Name = "ParkingPOS.Caseta";
@@ -91,14 +89,6 @@ namespace ParkingPOS
 			this.hbox8.Name = "hbox8";
 			this.hbox8.Spacing = 6;
 			// Container child hbox8.Gtk.Box+BoxChild
-			this.image2 = new global::Gtk.Image ();
-			this.image2.Name = "image2";
-			this.hbox8.Add (this.image2);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox8 [this.image2]));
-			w3.Position = 0;
-			w3.Expand = false;
-			w3.Fill = false;
-			// Container child hbox8.Gtk.Box+BoxChild
 			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
@@ -108,13 +98,11 @@ namespace ParkingPOS
 			this.treeview1.Name = "treeview1";
 			this.GtkScrolledWindow.Add (this.treeview1);
 			this.hbox8.Add (this.GtkScrolledWindow);
-			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox8 [this.GtkScrolledWindow]));
-			w5.Position = 1;
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox8 [this.GtkScrolledWindow]));
+			w4.Position = 1;
 			this.vbox5.Add (this.hbox8);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.hbox8]));
-			w6.Position = 1;
-			w6.Expand = false;
-			w6.Fill = false;
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.hbox8]));
+			w5.Position = 1;
 			// Container child vbox5.Gtk.Box+BoxChild
 			this.hbox7 = new global::Gtk.HBox ();
 			this.hbox7.Name = "hbox7";
@@ -126,13 +114,15 @@ namespace ParkingPOS
 			this.entry3.IsEditable = true;
 			this.entry3.InvisibleChar = '•';
 			this.hbox7.Add (this.entry3);
-			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox7 [this.entry3]));
-			w7.Position = 0;
+			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox7 [this.entry3]));
+			w6.Position = 0;
+			w6.Expand = false;
+			w6.Fill = false;
 			this.vbox5.Add (this.hbox7);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.hbox7]));
-			w8.Position = 2;
-			w8.Expand = false;
-			w8.Fill = false;
+			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.hbox7]));
+			w7.Position = 2;
+			w7.Expand = false;
+			w7.Fill = false;
 			this.Add (this.vbox5);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
