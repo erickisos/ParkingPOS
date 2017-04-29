@@ -1,13 +1,12 @@
 ﻿<Properties StartupItem="ParkingPOS/ParkingPOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ParkingPOS/gtk-gui/MainWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParkingPOS/Boletera.cs">
     <Files>
-      <File FileName="ParkingPOS/Boletera.cs" Line="6" Column="3" />
+      <File FileName="ParkingPOS/Boletera.cs" Line="16" Column="5" />
       <File FileName="ParkingPOS/Program.cs" Line="1" Column="1" />
-      <File FileName="ParkingPOS/Caseta.cs" Line="20" Column="1" />
-      <File FileName="ParkingPOS/MainWindow.cs" Line="14" Column="14" />
-      <File FileName="ParkingPOS/AcercaDeDialog.cs" Line="11" Column="115" />
-      <File FileName="ParkingPOS/gtk-gui/MainWindow.cs" Line="40" Column="129" />
+      <File FileName="ParkingPOS/Caseta.cs" Line="1" Column="1" />
+      <File FileName="ParkingPOS/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="ParkingPOS/AcercaDeDialog.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -11,6 +11,7 @@ namespace ParkingPOS
 			global::Stetic.Gui.Initialize (this);
 			// Widget ParkingPOS.AcercaDeDialog
 			this.Name = "ParkingPOS.AcercaDeDialog";
+			this.Title = global::Mono.Unix.Catalog.GetString ("window1");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Internal child ParkingPOS.AcercaDeDialog.VBox
 			global::Gtk.VBox w1 = this.VBox;

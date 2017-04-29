@@ -7,7 +7,6 @@ public partial class MainWindow: Gtk.Window
 	public static ParkingPOS.Caseta caseta;
 	public static ParkingPOS.Boletera boletera;
 
-
 	public MainWindow () : base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
