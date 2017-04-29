@@ -118,6 +118,7 @@ Boletera</property>
                         <property name="MemberName" />
                         <property name="CanFocus">True</property>
                         <property name="IsEditable">True</property>
+                        <property name="Visibility">False</property>
                         <property name="InvisibleChar">•</property>
                       </widget>
                       <packing>
@@ -161,6 +162,7 @@ Boletera</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">Aceptar</property>
                 <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnLoginClicked" />
               </widget>
               <packing>
                 <property name="Position">0</property>

@@ -122,6 +122,7 @@ public partial class MainWindow
 		this.entry2.CanFocus = true;
 		this.entry2.Name = "entry2";
 		this.entry2.IsEditable = true;
+		this.entry2.Visibility = false;
 		this.entry2.InvisibleChar = '•';
 		this.hbox6.Add (this.entry2);
 		global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox6 [this.entry2]));
@@ -169,5 +170,6 @@ public partial class MainWindow
 		this.DefaultHeight = 155;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
+		this.button3.Clicked += new global::System.EventHandler (this.OnLoginClicked);
 	}
 }
