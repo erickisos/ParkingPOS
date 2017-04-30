@@ -5,7 +5,7 @@ using ParkingPOS;
 
 public partial class MainWindow: Gtk.Window
 {
-	public static AcercaDeDialog about;
+	public static AboutWindow about;
 	public static Caseta caseta;
 	public static Boletera boletera;
 	private static SQLConnection conn;
@@ -16,17 +16,12 @@ public partial class MainWindow: Gtk.Window
 		Build ();
 		conn = sqlConnector;
 		printer = mainPrinter;
-		about = new ParkingPOS.AcercaDeDialog ();
-		//caseta = new ParkingPOS.Caseta (ref conn);
-
-		//boletera = new ParkingPOS.Boletera ();
-		about.Run ();
-		about.Destroy ();
+		caseta = new Caseta (ref conn);
 	}
 
 	void OnClicksito (object sender, EventArgs a)
 	{
-		about = new AcercaDeDialog ();
+		about = new AboutWindow ();
 		about.Run ();
 		about.Destroy ();
 	}
