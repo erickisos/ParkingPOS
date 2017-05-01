@@ -248,6 +248,7 @@ Boletera</property>
         <property name="Type">Action</property>
         <property name="Label" translatable="yes">Acerca De</property>
         <property name="ShortLabel" translatable="yes">Acerca De</property>
+        <signal name="Activated" handler="OnAboutClicked" />
       </action>
       <action id="ManualDeUsuarioAction">
         <property name="Type">Action</property>
@@ -263,11 +264,13 @@ Boletera</property>
         <property name="Type">Action</property>
         <property name="Label" translatable="yes">Depurar</property>
         <property name="ShortLabel" translatable="yes">Depurar</property>
+        <signal name="Activated" handler="OnDepurarClicked" />
       </action>
       <action id="RepararAction">
         <property name="Type">Action</property>
         <property name="Label" translatable="yes">Reparar</property>
         <property name="ShortLabel" translatable="yes">Reparar</property>
+        <signal name="Activated" handler="OnRepararClicked" />
       </action>
       <action id="EditarAction">
         <property name="Type">Action</property>
@@ -279,6 +282,7 @@ Boletera</property>
         <property name="Accelerator">&lt;Alt&gt;&lt;Mod2&gt;p</property>
         <property name="Label" translatable="yes">Preferencias</property>
         <property name="ShortLabel" translatable="yes">Preferencias</property>
+        <signal name="Activated" handler="OnPreferencesClicked" />
       </action>
     </action-group>
     <property name="MemberName" />

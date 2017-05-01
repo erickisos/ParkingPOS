@@ -6,6 +6,7 @@ namespace ParkingPOS
 	{
 		private string currentTicket;
 		private SQLConnection connector;
+		private AboutWindow awin;
 
 		public Caseta (ref SQLConnection sqlConnector) : base (Gtk.WindowType.Toplevel)
 		{
@@ -25,16 +26,35 @@ namespace ParkingPOS
 					string folio = currentTicket.Substring (1, 8);
 					string hora = currentTicket.Substring (9, 4);
 					string fecha = currentTicket.Substring (13, 2);
-					Console.WriteLine ("Caseta: {0}\n" +
-						"Folio: {1}\n" +
-						"Hora: {2}:{3}\n" +
-						"Fecha: {4}", caseta, folio, hora.Substring(0,2),
-						hora.Substring(2, 2), fecha);
+					Console.WriteLine ("Caseta: {0} \nFolio: {1} \nHora: {2}:{3} \nFecha: {4}", caseta,
+						folio, hora.Substring(0,2), hora.Substring(2, 2), fecha);
 				}
 				catch(Exception e) {
 					Console.WriteLine ("Error: {0}", e.Message);
 				}
 			}
+		}
+
+		protected void OnAboutClicked (object sender, EventArgs e)
+		{
+			awin = new AboutWindow ();
+			awin.Run ();
+			awin.Destroy ();
+		}
+
+		protected void OnDepurarClicked (object sender, EventArgs e)
+		{
+			throw new NotImplementedException ();
+		}
+
+		protected void OnRepararClicked (object sender, EventArgs e)
+		{
+			throw new NotImplementedException ();
+		}
+
+		protected void OnPreferencesClicked (object sender, EventArgs e)
+		{
+			throw new NotImplementedException ();
 		}
 	}
 }

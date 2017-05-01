@@ -35,6 +35,7 @@ namespace ParkingPOS
 			SQLConnection conn = new SQLConnection ("URI=file:POS.db");
 			PrintDocument printer = new PrintDocument ();
 			// conn.executeQuery (creatorStringSql);
+			// conn.executeQuery ("INSERT INTO LOGIN(VENDEDOR, PASSWORD) VALUES(root admin);");
 			Application.Init ();
 			MainWindow win = new MainWindow (ref conn, ref printer);
 			win.Show ();

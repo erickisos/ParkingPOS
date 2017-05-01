@@ -7,7 +7,7 @@ namespace ParkingPOS
 		public AboutWindow ()
 		{
 			this.ProgramName = "Parking POS";
-			this.Version = "v0.1";
+			this.Version = "v0.3";
 			this.License = "Released under the GNU General Public License v3";
 			this.Logo = new Gdk.Pixbuf("../../icon_128.png");
 			this.Authors = new string[] {"Erick G. Islas-Osuna"};

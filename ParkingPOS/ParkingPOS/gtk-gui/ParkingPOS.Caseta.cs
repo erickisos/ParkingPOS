@@ -130,6 +130,10 @@ namespace ParkingPOS
 			this.DefaultWidth = 906;
 			this.DefaultHeight = 483;
 			this.Show ();
+			this.AcercaDeAction.Activated += new global::System.EventHandler (this.OnAboutClicked);
+			this.DepurarAction.Activated += new global::System.EventHandler (this.OnDepurarClicked);
+			this.RepararAction.Activated += new global::System.EventHandler (this.OnRepararClicked);
+			this.PreferenciasAction.Activated += new global::System.EventHandler (this.OnPreferencesClicked);
 			this.entry3.KeyReleaseEvent += new global::Gtk.KeyReleaseEventHandler (this.OnKeyRelease);
 		}
 	}

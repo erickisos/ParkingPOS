@@ -9,12 +9,14 @@ namespace ParkingPOS
 		// string connectionString = "URI=file:POS.db";
 		SqliteConnection db = null;
 		SqliteCommand dbcmd = null;
+		SqliteDataReader rdr = null;
 
 		public SQLConnection (string connectionString)
 		{
 			db = new SqliteConnection (connectionString);
 			db.Open ();
 			dbcmd = new SqliteCommand (db);
+			rdr = new SqliteDataReader ();
 		}
 
 		public bool executeQuery(string text)
@@ -28,6 +30,18 @@ namespace ParkingPOS
 			{
 				Console.WriteLine ("Error: {0}", ex.ErrorCode);
 				return false;
+			}
+		}
+
+		public string getValues(string table, string column, string keyValue)
+		{
+			try{
+				dbcmd.CommandText = String.Format("SELECT * FROM {0} WHERE {1} = {2}", table, column, keyValue);
+				rdr = dbcmd.ExecuteReader();
+				while(rdr.Read())
+				{
+					Console.WriteLine("Vale verga, regreso esto: {0}", rdr.GetFieldType(0));
+				}
 			}
 		}
 

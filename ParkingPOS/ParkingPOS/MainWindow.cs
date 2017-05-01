@@ -37,6 +37,7 @@ public partial class MainWindow: Gtk.Window
 		//throw new NotImplementedException ();
 		string user = entry1.Text;
 		string password = entry2.Text;
+		conn.executeQuery ("SELECT * FROM login WHERE VENDEDOR = ");
 		Console.WriteLine("Datos ingresados: {0}, {1}", user, password);
 	}
 }
