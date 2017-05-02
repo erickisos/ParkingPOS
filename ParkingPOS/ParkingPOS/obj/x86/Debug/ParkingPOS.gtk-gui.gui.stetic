@@ -105,7 +105,6 @@ Boletera</property>
                     <child>
                       <widget class="Gtk.Label" id="label4">
                         <property name="MemberName" />
-                        <property name="Xalign">1</property>
                         <property name="LabelProp" translatable="yes">Contraseña:</property>
                       </widget>
                       <packing>

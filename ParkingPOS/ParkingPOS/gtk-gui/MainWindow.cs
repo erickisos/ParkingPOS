@@ -112,7 +112,6 @@ public partial class MainWindow
 		// Container child hbox6.Gtk.Box+BoxChild
 		this.label4 = new global::Gtk.Label ();
 		this.label4.Name = "label4";
-		this.label4.Xalign = 1F;
 		this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Contraseña:");
 		this.hbox6.Add (this.label4);
 		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox6 [this.label4]));

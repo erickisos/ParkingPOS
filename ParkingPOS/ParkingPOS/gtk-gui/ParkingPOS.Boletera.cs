@@ -64,6 +64,7 @@ namespace ParkingPOS
 			this.DefaultWidth = 855;
 			this.DefaultHeight = 495;
 			this.Show ();
+			this.entry1.KeyReleaseEvent += new global::Gtk.KeyReleaseEventHandler (this.OnKeyReleased);
 		}
 	}
 }

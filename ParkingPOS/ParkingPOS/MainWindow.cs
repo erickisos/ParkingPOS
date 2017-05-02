@@ -16,7 +16,7 @@ public partial class MainWindow: Gtk.Window
 		Build ();
 		conn = sqlConnector;
 		printer = mainPrinter;
-		caseta = new Caseta (ref conn);
+		// caseta = new Caseta (ref conn);
 	}
 
 	void OnClicksito (object sender, EventArgs a)
@@ -37,7 +37,15 @@ public partial class MainWindow: Gtk.Window
 		//throw new NotImplementedException ();
 		string user = entry1.Text;
 		string password = entry2.Text;
-		conn.executeQuery ("SELECT * FROM login WHERE VENDEDOR = ");
+		string db_password = conn.getPassword (user);
 		Console.WriteLine("Datos ingresados: {0}, {1}", user, password);
+		Console.WriteLine ("Contraseña encontrada: {0}", db_password);
+		string work_mode = combobox2.ActiveText;
+		if (work_mode == "Boletera") {
+			Console.WriteLine ("Opening Boletera");
+			boletera = new Boletera (ref conn);
+		} else if (work_mode == "Caseta") {
+			Console.WriteLine ("Opening Caseta");
+		}
 	}
 }
