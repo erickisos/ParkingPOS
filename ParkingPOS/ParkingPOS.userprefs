@@ -1,17 +1,29 @@
-﻿<Properties StartupItem="ParkingPOS/ParkingPOS.csproj">
+﻿<Properties StartupConfiguration="{7F8A27F2-C2B2-4069-A02D-FB1E172866F0}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ParkingPOS/Caseta.cs">
-    <Files>
-      <File FileName="ParkingPOS/Boletera.cs" Line="16" Column="5" />
-      <File FileName="ParkingPOS/Program.cs" Line="36" Column="39" />
-      <File FileName="ParkingPOS/Caseta.cs" Line="1" Column="1" />
-      <File FileName="ParkingPOS/MainWindow.cs" Line="15" Column="3" />
-      <File FileName="ParkingPOS/AcercaDeDialog.cs" Line="12" Column="1" />
-      <File FileName="ParkingPOS/SQLConnection.cs" Line="12" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParkingPOS\TicketSelection.cs">
+    <Files>
+      <File FileName="ParkingPOS\Program.cs" Line="12" Column="19" />
+      <File FileName="ParkingPOS\Caseta.cs" Line="28" Column="20" />
+      <File FileName="ParkingPOS\MainWindow.cs" Line="48" Column="3" />
+      <File FileName="ParkingPOS\SQLConnection.cs" Line="108" Column="6" />
+      <File FileName="ParkingPOS\TicketSelection.cs" Line="12" Column="1" />
+      <File FileName="ParkingPOS\ErrorDialog.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ParkingPOS" expanded="True">
+            <Node name="ParkingPOS" expanded="True">
+              <Node name="TicketSelection.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ParkingPOS PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

@@ -21,16 +21,23 @@ namespace ParkingPOS
 				Console.WriteLine ("No: {0}", entry3.Text);
 				currentTicket = entry3.Text;
 				entry3.DeleteText (0, -1);
-				try{
-					string caseta = currentTicket.Substring(0, 1);
-					string folio = currentTicket.Substring (1, 8);
-					string hora = currentTicket.Substring (9, 4);
-					string fecha = currentTicket.Substring (13, 2);
-					Console.WriteLine ("Caseta: {0} \nFolio: {1} \nHora: {2}:{3} \nFecha: {4}", caseta,
-						folio, hora.Substring(0,2), hora.Substring(2, 2), fecha);
-				}
-				catch(Exception e) {
-					Console.WriteLine ("Error: {0}", e.Message);
+				if (currentTicket.Length == 18)
+				{
+					TicketSelection sel;
+					sel = new TicketSelection();
+					try
+					{
+						string caseta = currentTicket.Substring(0, 1);
+						string folio = currentTicket.Substring(1, 8);
+						string hora = currentTicket.Substring(9, 4);
+						string fecha = currentTicket.Substring(13, 2);
+						Console.WriteLine("Caseta: {0} \nFolio: {1} \nHora: {2}:{3} \nFecha: {4}", caseta,
+							folio, hora.Substring(0, 2), hora.Substring(2, 2), fecha);
+					}
+					catch (Exception e)
+					{
+						Console.WriteLine("Error: {0}", e.Message);
+					}
 				}
 			}
 		}

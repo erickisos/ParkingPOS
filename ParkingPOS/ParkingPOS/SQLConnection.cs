@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Data;
-using Mono.Data.Sqlite;
+using System.Data.SQLite;
 
 namespace ParkingPOS
 {
 	public class SQLConnection
 	{
 		// string connectionString = "URI=file:POS.db";
-		SqliteConnection db = null;
-		SqliteCommand dbcmd = null;
-		SqliteDataReader rdr = null;
+		SQLiteConnection db = null;
+		SQLiteCommand dbcmd = null;
+		SQLiteDataReader rdr = null;
 
 		public SQLConnection (string connectionString)
 		{
-			db = new SqliteConnection (connectionString);
+			db = new SQLiteConnection(connectionString);
 			db.Open ();
-			dbcmd = new SqliteCommand (db);
+			dbcmd = new SQLiteCommand(db);
 		}
 
 		public bool executeQuery(string text)
@@ -25,7 +25,7 @@ namespace ParkingPOS
 				dbcmd.ExecuteNonQuery ();
 				return true;
 			}
-			catch(SqliteException ex) 
+			catch(SQLiteException ex) 
 			{
 				Console.WriteLine ("Error: {0}", ex.ErrorCode);
 				return false;
@@ -42,7 +42,7 @@ namespace ParkingPOS
 					Console.WriteLine("Vale verga, regreso esto: {0}", rdr.GetFieldType(0));
 				}
 			}
-			catch(SqliteException ex) {
+			catch(SQLiteException ex) {
 				Console.WriteLine ("Error: {0}", ex.ErrorCode);
 			}
 		}
@@ -63,7 +63,7 @@ namespace ParkingPOS
 				rdr = null;
 				return passwd;
 			}
-			catch(SqliteException ex) {
+			catch(SQLiteException ex) {
 				Console.WriteLine ("SQLError: {0}", ex.Message);
 				return "";
 			}
@@ -73,15 +73,40 @@ namespace ParkingPOS
 			}
 		}
 
-		public long getLastTicket()
+		public string getLastTicket()
 		{
-			long folio = 0;
+			string folio = "";
 			try{
 				dbcmd.CommandText = String.Format("SELECT * FROM ");
 				return folio;
 			}
-			catch(SqliteException ex) {
+			catch(SQLiteException ex) {
+				Console.WriteLine("{0}", ex.Message);
 				return null;
+			}
+		}
+
+		public void writeTicket(string folio, int tipo, float costo)
+		{
+			string caseta;
+			string fecha;
+			string hora;
+			string current_number;
+			if (folio.Length == 18)
+			{
+				caseta = folio.Substring(0, 1);
+				current_number = folio.Substring(1, 8);
+				hora = folio.Substring(9, 2) + ":" + folio.Substring(11, 2);
+				fecha = folio.Substring(13, 2) + "/" + folio.Substring(15, 2) + "/" + folio.Substring(17, 2);
+				try
+				{
+					string query = String.Format("INSERT INTO ventas VALUES({0}, {1}, {2}, {3}, {4}, {5});", folio, hora, fecha, caseta, tipo, costo);
+					executeQuery(query);
+				}
+				catch (SQLiteException ex)
+				{
+					Console.WriteLine("Error: {0}", ex.Message);
+				}
 			}
 		}
 

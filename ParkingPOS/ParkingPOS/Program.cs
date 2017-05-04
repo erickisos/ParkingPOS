@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Drawing.Printing;
 using Gtk;
-using Mono.Data.Sqlite;
+using System.Data.SQLite;
 
 namespace ParkingPOS
 {
 	class MainClass
 	{		
 		const string creatorStringSql = "CREATE TABLE IF NOT EXISTS VENTAS(" +
-			"FOLIO VARCHAR(8) PRIMARY KEY NOT NULL," +
-			"HORA VARCHAR(4) NOT NULL," +
+			"FOLIO VARCHAR(18) PRIMARY KEY NOT NULL," +
+			"HORA VARCHAR(5) NOT NULL," +
 			"FECHA DATE NOT NULL," +
 			"BOLETERA CHAR(1) NOT NULL," +
 			"TIPO INTEGER NOT NULL," +

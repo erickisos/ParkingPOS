@@ -46,6 +46,7 @@ public partial class MainWindow: Gtk.Window
 			boletera = new Boletera (ref conn);
 		} else if (work_mode == "Caseta") {
 			Console.WriteLine ("Opening Caseta");
+			caseta = new Caseta(ref conn);
 		}
 	}
 }

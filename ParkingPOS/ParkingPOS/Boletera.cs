@@ -15,7 +15,7 @@ namespace ParkingPOS
 
 		private int getLastTicket()
 		{
-			
+			return 0;
 		}
 
 		protected void OnKeyReleased (object o, Gtk.KeyReleaseEventArgs args)

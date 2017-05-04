@@ -5,136 +5,137 @@ namespace ParkingPOS
 	public partial class Caseta
 	{
 		private global::Gtk.UIManager UIManager;
-		
+
 		private global::Gtk.Action AyudaAction;
-		
+
 		private global::Gtk.Action AcercaDeAction;
-		
+
 		private global::Gtk.Action ManualDeUsuarioAction;
-		
+
 		private global::Gtk.Action BaseDeDatosAction;
-		
+
 		private global::Gtk.Action DepurarAction;
-		
+
 		private global::Gtk.Action RepararAction;
-		
+
 		private global::Gtk.Action EditarAction;
-		
+
 		private global::Gtk.Action PreferenciasAction;
-		
+
 		private global::Gtk.VBox vbox5;
-		
+
 		private global::Gtk.MenuBar menubar1;
-		
+
 		private global::Gtk.HBox hbox8;
-		
+
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
-		
+
 		private global::Gtk.TreeView treeview1;
-		
+
 		private global::Gtk.HBox hbox7;
-		
+
 		private global::Gtk.Entry entry3;
 
-		protected virtual void Build ()
+		protected virtual void Build()
 		{
-			global::Stetic.Gui.Initialize (this);
+			global::Stetic.Gui.Initialize(this);
 			// Widget ParkingPOS.Caseta
-			this.UIManager = new global::Gtk.UIManager ();
-			global::Gtk.ActionGroup w1 = new global::Gtk.ActionGroup ("Default");
-			this.AyudaAction = new global::Gtk.Action ("AyudaAction", global::Mono.Unix.Catalog.GetString ("A_yuda"), null, null);
-			this.AyudaAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Ayuda");
-			w1.Add (this.AyudaAction, null);
-			this.AcercaDeAction = new global::Gtk.Action ("AcercaDeAction", global::Mono.Unix.Catalog.GetString ("Acerca De"), null, null);
-			this.AcercaDeAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Acerca De");
-			w1.Add (this.AcercaDeAction, null);
-			this.ManualDeUsuarioAction = new global::Gtk.Action ("ManualDeUsuarioAction", global::Mono.Unix.Catalog.GetString ("Manual de Usuario"), null, null);
-			this.ManualDeUsuarioAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Manual de Usuario");
-			w1.Add (this.ManualDeUsuarioAction, null);
-			this.BaseDeDatosAction = new global::Gtk.Action ("BaseDeDatosAction", global::Mono.Unix.Catalog.GetString ("_Base de Datos"), null, null);
-			this.BaseDeDatosAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Base de Datos");
-			w1.Add (this.BaseDeDatosAction, null);
-			this.DepurarAction = new global::Gtk.Action ("DepurarAction", global::Mono.Unix.Catalog.GetString ("Depurar"), null, null);
-			this.DepurarAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Depurar");
-			w1.Add (this.DepurarAction, null);
-			this.RepararAction = new global::Gtk.Action ("RepararAction", global::Mono.Unix.Catalog.GetString ("Reparar"), null, null);
-			this.RepararAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Reparar");
-			w1.Add (this.RepararAction, null);
-			this.EditarAction = new global::Gtk.Action ("EditarAction", global::Mono.Unix.Catalog.GetString ("_Editar"), null, null);
-			this.EditarAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Editar");
-			w1.Add (this.EditarAction, null);
-			this.PreferenciasAction = new global::Gtk.Action ("PreferenciasAction", global::Mono.Unix.Catalog.GetString ("Preferencias"), null, null);
-			this.PreferenciasAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Preferencias");
-			w1.Add (this.PreferenciasAction, "<Alt><Mod2>p");
-			this.UIManager.InsertActionGroup (w1, 0);
-			this.AddAccelGroup (this.UIManager.AccelGroup);
+			this.UIManager = new global::Gtk.UIManager();
+			global::Gtk.ActionGroup w1 = new global::Gtk.ActionGroup("Default");
+			this.AyudaAction = new global::Gtk.Action("AyudaAction", global::Mono.Unix.Catalog.GetString("A_yuda"), null, null);
+			this.AyudaAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Ayuda");
+			w1.Add(this.AyudaAction, null);
+			this.AcercaDeAction = new global::Gtk.Action("AcercaDeAction", global::Mono.Unix.Catalog.GetString("Acerca De"), null, null);
+			this.AcercaDeAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Acerca De");
+			w1.Add(this.AcercaDeAction, null);
+			this.ManualDeUsuarioAction = new global::Gtk.Action("ManualDeUsuarioAction", global::Mono.Unix.Catalog.GetString("Manual de Usuario"), null, null);
+			this.ManualDeUsuarioAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Manual de Usuario");
+			w1.Add(this.ManualDeUsuarioAction, null);
+			this.BaseDeDatosAction = new global::Gtk.Action("BaseDeDatosAction", global::Mono.Unix.Catalog.GetString("_Base de Datos"), null, null);
+			this.BaseDeDatosAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Base de Datos");
+			w1.Add(this.BaseDeDatosAction, null);
+			this.DepurarAction = new global::Gtk.Action("DepurarAction", global::Mono.Unix.Catalog.GetString("Depurar"), null, null);
+			this.DepurarAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Depurar");
+			w1.Add(this.DepurarAction, null);
+			this.RepararAction = new global::Gtk.Action("RepararAction", global::Mono.Unix.Catalog.GetString("Reparar"), null, null);
+			this.RepararAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Reparar");
+			w1.Add(this.RepararAction, null);
+			this.EditarAction = new global::Gtk.Action("EditarAction", global::Mono.Unix.Catalog.GetString("_Editar"), null, null);
+			this.EditarAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Editar");
+			w1.Add(this.EditarAction, null);
+			this.PreferenciasAction = new global::Gtk.Action("PreferenciasAction", global::Mono.Unix.Catalog.GetString("Preferencias"), null, null);
+			this.PreferenciasAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Preferencias");
+			w1.Add(this.PreferenciasAction, "<Alt><Mod2>p");
+			this.UIManager.InsertActionGroup(w1, 0);
+			this.AddAccelGroup(this.UIManager.AccelGroup);
 			this.Name = "ParkingPOS.Caseta";
-			this.Title = global::Mono.Unix.Catalog.GetString ("Parking POS - Caseta de Cobro");
+			this.Title = global::Mono.Unix.Catalog.GetString("Parking POS - Caseta de Cobro");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Container child ParkingPOS.Caseta.Gtk.Container+ContainerChild
-			this.vbox5 = new global::Gtk.VBox ();
+			this.vbox5 = new global::Gtk.VBox();
 			this.vbox5.Name = "vbox5";
 			this.vbox5.Spacing = 6;
 			// Container child vbox5.Gtk.Box+BoxChild
-			this.UIManager.AddUiFromString ("<ui><menubar name='menubar1'><menu name='EditarAction' action='EditarAction'><menuitem name='PreferenciasAction' action='PreferenciasAction'/></menu><menu name='BaseDeDatosAction' action='BaseDeDatosAction'><menuitem name='DepurarAction' action='DepurarAction'/><menuitem name='RepararAction' action='RepararAction'/></menu><menu name='AyudaAction' action='AyudaAction'><menuitem name='AcercaDeAction' action='AcercaDeAction'/><menuitem name='ManualDeUsuarioAction' action='ManualDeUsuarioAction'/></menu></menubar></ui>");
-			this.menubar1 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget ("/menubar1")));
+			this.UIManager.AddUiFromString(@"<ui><menubar name='menubar1'><menu name='EditarAction' action='EditarAction'><menuitem name='PreferenciasAction' action='PreferenciasAction'/></menu><menu name='BaseDeDatosAction' action='BaseDeDatosAction'><menuitem name='DepurarAction' action='DepurarAction'/><menuitem name='RepararAction' action='RepararAction'/></menu><menu name='AyudaAction' action='AyudaAction'><menuitem name='AcercaDeAction' action='AcercaDeAction'/><menuitem name='ManualDeUsuarioAction' action='ManualDeUsuarioAction'/></menu></menubar></ui>");
+			this.menubar1 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget("/menubar1")));
 			this.menubar1.Name = "menubar1";
-			this.vbox5.Add (this.menubar1);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.menubar1]));
+			this.vbox5.Add(this.menubar1);
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox5[this.menubar1]));
 			w2.Position = 0;
 			w2.Expand = false;
 			w2.Fill = false;
 			// Container child vbox5.Gtk.Box+BoxChild
-			this.hbox8 = new global::Gtk.HBox ();
+			this.hbox8 = new global::Gtk.HBox();
 			this.hbox8.Name = "hbox8";
 			this.hbox8.Spacing = 6;
 			// Container child hbox8.Gtk.Box+BoxChild
-			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
+			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-			this.treeview1 = new global::Gtk.TreeView ();
+			this.treeview1 = new global::Gtk.TreeView();
 			this.treeview1.CanFocus = true;
 			this.treeview1.Name = "treeview1";
-			this.GtkScrolledWindow.Add (this.treeview1);
-			this.hbox8.Add (this.GtkScrolledWindow);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox8 [this.GtkScrolledWindow]));
+			this.GtkScrolledWindow.Add(this.treeview1);
+			this.hbox8.Add(this.GtkScrolledWindow);
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.GtkScrolledWindow]));
 			w4.Position = 1;
-			this.vbox5.Add (this.hbox8);
-			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.hbox8]));
+			this.vbox5.Add(this.hbox8);
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox5[this.hbox8]));
 			w5.Position = 1;
 			// Container child vbox5.Gtk.Box+BoxChild
-			this.hbox7 = new global::Gtk.HBox ();
+			this.hbox7 = new global::Gtk.HBox();
 			this.hbox7.Name = "hbox7";
 			this.hbox7.Spacing = 6;
 			// Container child hbox7.Gtk.Box+BoxChild
-			this.entry3 = new global::Gtk.Entry ();
+			this.entry3 = new global::Gtk.Entry();
 			this.entry3.CanFocus = true;
 			this.entry3.Name = "entry3";
 			this.entry3.IsEditable = true;
 			this.entry3.InvisibleChar = '•';
-			this.hbox7.Add (this.entry3);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox7 [this.entry3]));
+			this.hbox7.Add(this.entry3);
+			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.entry3]));
 			w6.Position = 0;
 			w6.Expand = false;
 			w6.Fill = false;
-			this.vbox5.Add (this.hbox7);
-			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.hbox7]));
+			this.vbox5.Add(this.hbox7);
+			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox5[this.hbox7]));
 			w7.Position = 2;
 			w7.Expand = false;
 			w7.Fill = false;
-			this.Add (this.vbox5);
-			if ((this.Child != null)) {
-				this.Child.ShowAll ();
+			this.Add(this.vbox5);
+			if ((this.Child != null))
+			{
+				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 906;
 			this.DefaultHeight = 483;
-			this.Show ();
-			this.AcercaDeAction.Activated += new global::System.EventHandler (this.OnAboutClicked);
-			this.DepurarAction.Activated += new global::System.EventHandler (this.OnDepurarClicked);
-			this.RepararAction.Activated += new global::System.EventHandler (this.OnRepararClicked);
-			this.PreferenciasAction.Activated += new global::System.EventHandler (this.OnPreferencesClicked);
-			this.entry3.KeyReleaseEvent += new global::Gtk.KeyReleaseEventHandler (this.OnKeyRelease);
+			this.Show();
+			this.AcercaDeAction.Activated += new global::System.EventHandler(this.OnAboutClicked);
+			this.DepurarAction.Activated += new global::System.EventHandler(this.OnDepurarClicked);
+			this.RepararAction.Activated += new global::System.EventHandler(this.OnRepararClicked);
+			this.PreferenciasAction.Activated += new global::System.EventHandler(this.OnPreferencesClicked);
+			this.entry3.KeyReleaseEvent += new global::Gtk.KeyReleaseEventHandler(this.OnKeyRelease);
 		}
 	}
 }
