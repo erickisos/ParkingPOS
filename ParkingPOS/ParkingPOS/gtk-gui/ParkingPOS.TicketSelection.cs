@@ -91,7 +91,7 @@ namespace ParkingPOS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 304;
-			this.DefaultHeight = 229;
+			this.DefaultHeight = 249;
 			this.Show();
 		}
 	}

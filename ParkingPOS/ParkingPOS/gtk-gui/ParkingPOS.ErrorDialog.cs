@@ -55,7 +55,7 @@ namespace ParkingPOS
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 400;
-			this.DefaultHeight = 300;
+			this.DefaultHeight = 280;
 			this.Show();
 		}
 	}

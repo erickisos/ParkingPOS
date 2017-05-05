@@ -36,8 +36,13 @@ namespace ParkingPOS
 					}
 					catch (Exception e)
 					{
+						ErrorDialog erd = new ErrorDialog(e.Message);
 						Console.WriteLine("Error: {0}", e.Message);
 					}
+				}
+				else
+				{
+					ErrorDialog erd = new ErrorDialog("Ese no es un ticket, no mames");
 				}
 			}
 		}

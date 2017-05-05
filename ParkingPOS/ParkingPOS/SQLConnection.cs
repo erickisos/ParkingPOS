@@ -105,6 +105,7 @@ namespace ParkingPOS
 				}
 				catch (SQLiteException ex)
 				{
+					ErrorDialog errord = new ErrorDialog(ex.Message);
 					Console.WriteLine("Error: {0}", ex.Message);
 				}
 			}
